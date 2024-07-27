@@ -1,6 +1,7 @@
 from flask import Flask, request, jsonify
 from flask_pymongo import PyMongo
 import os
+from flask_bcrypt import Bcrypt
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -9,7 +10,6 @@ load_dotenv()
 class ConfigMongoDB:
     MONGO_URI = os.getenv('MONGO_URI')
     SECRET_KEY = os.getenv('SECRET_KEY')
-
 
 
 mongo = PyMongo()
