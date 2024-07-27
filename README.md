@@ -12,7 +12,7 @@ This application is developed using Flask and MongoDB. It provides REST API endp
 
 ### REST API Endpoints
 
-- `POST /createUser` - Creates a new user.
+- `POST /createUser` - Creates a new user. (Pass JSON body for feilds like firstName, lastName, email, password)
 - `POST /fetchUsers` - Fetches all users.
 - `POST /update/<email>` - Updates user data by email.
 - `DELETE /delete/<email>` - Deletes user by email.
